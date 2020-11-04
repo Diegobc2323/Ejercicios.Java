@@ -7,9 +7,9 @@ public class Ejercicio8 {
 		Scanner leer = new Scanner(System.in);
 		
 		float importe;
-		String mes, comprobacion;
+		String mes, comprobacion="octubre";
 		
-		comprobacion="octubre";
+		
 		
 		System.out.println("Importe de la compra");
 		
@@ -19,11 +19,7 @@ public class Ejercicio8 {
 		
 		mes = leer.next();
 		
-		mes = mes.toLowerCase();
-		
-		System.out.println(mes);
-		
-		if (mes==comprobacion) {
+		if (mes.equalsIgnoreCase(comprobacion)) {
 			
 			System.out.println("Se le aplicara un descuento de un 15% a su importe");
 			System.out.println("De "+importe+"€ pasa a ser "+(importe*0.85)+"€");
