@@ -15,11 +15,12 @@ public class Ejercicio5_1_4 {
 		frase = leer.nextLine();
 		
 		for (int i = 0; i < frase.length(); i++) {
-			if (frase.substring(i-1,i).equals(" ") && !frase.substring(i,i+1).equals(" ") && i!=0) {
+			
+			if (i!=0 && (frase.substring(i-1,i).equals(" ") || frase.substring(i-1,i).equals("") && !frase.substring(i,i+1).equals(" "))) {
 				cont +=1;
 			}
 		}
-		
+		System.out.println("Tu frase tiene "+cont+" palabras");
 	}
 
 }
