@@ -23,6 +23,10 @@ public class Ejercicio6_1_4 {
 			fin--;
 		}
 		
+		if (nombre.substring(fin-1, fin).equals(" ")) {
+			fin--;
+		}
+		
 		
 		for (int i = inicio; i < fin; i++) {
 			if (!(i!=0 && nombre.subSequence(i, i+1).equals(" ") && nombre.subSequence(i-1, i).equals(" "))) {
